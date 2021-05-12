@@ -1,6 +1,10 @@
 import numpy as np
 
-
+#functions for rcn pricing 
+#2 binomial model functions for pricing an underlying (1 recmbinating, 1 non-recombinating)
+#2 option pricing functions (1 using recombinating underlying, 1 using non-recomb underlying)
+# intermediate useful functions
+# RCN_price is the main function for the pricing of an RCN
 
 def r_stock_price(init, up, down, T, period_length=1, dividend_yield=0):
     """
@@ -632,6 +636,8 @@ def get_prices_per_u(u, ot, r, Delta, delta):
         prices.append(price)
 
     return prices
+
+
 
 
 
